@@ -1,0 +1,115 @@
+.experience {
+    max-width: 1100px;
+    margin: auto;
+    padding: 120px 24px;
+}
+
+.heading {
+    text-align: center;
+    font-size: 2.8rem;
+    margin-bottom: 80px;
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Timeline line */
+.timeline {
+    position: relative;
+    padding-left: 40px;
+}
+
+.timeline::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 0;
+    height: 100%;
+    width: 2px;
+    background: linear-gradient(to bottom,
+            rgba(56, 189, 248, 0),
+            rgba(56, 189, 248, 0.8),
+            rgba(56, 189, 248, 0));
+}
+
+/* Timeline item */
+.item {
+    position: relative;
+    display: flex;
+    gap: 40px;
+    margin-bottom: 70px;
+}
+
+/* Neon dot */
+.dot {
+    width: 18px;
+    height: 18px;
+    border-radius: 50%;
+    background: #38bdf8;
+    box-shadow: 0 0 20px rgba(56, 189, 248, 0.8);
+    flex-shrink: 0;
+    margin-top: 6px;
+}
+
+/* Glass card */
+.card {
+    background: rgba(255, 255, 255, 0.06);
+    backdrop-filter: blur(16px);
+    border-radius: 18px;
+    padding: 28px;
+    border: 1px solid rgba(56, 189, 248, 0.25);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 0 35px rgba(56, 189, 248, 0.3);
+}
+
+.card h3 {
+    font-size: 1.3rem;
+    color: #e5f3ff;
+    margin-bottom: 6px;
+}
+
+.card span {
+    font-size: 0.85rem;
+    color: #7dd3fc;
+}
+
+.card ul {
+    margin-top: 16px;
+    padding-left: 18px;
+}
+
+.card li {
+    color: #a8c3db;
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+}
+
+/* Scroll reveal */
+.reveal {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: reveal 0.8s ease forwards;
+}
+
+.reveal:nth-child(1) {
+    animation-delay: 0.2s;
+}
+
+.reveal:nth-child(2) {
+    animation-delay: 0.4s;
+}
+
+.reveal:nth-child(3) {
+    animation-delay: 0.6s;
+}
+
+@keyframes reveal {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

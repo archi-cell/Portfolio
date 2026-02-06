@@ -1,0 +1,91 @@
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 0 8vw;
+    background:
+        radial-gradient(circle at top left, rgba(56, 189, 248, 0.12), transparent 40%),
+        radial-gradient(circle at bottom right, rgba(167, 139, 250, 0.12), transparent 40%);
+}
+
+.hero-content {
+    max-width: 680px;
+}
+
+.hero-badge {
+    display: inline-block;
+    margin-bottom: 18px;
+    padding: 6px 14px;
+    border-radius: 999px;
+    font-size: 14px;
+    color: #38bdf8;
+    border: 1px solid rgba(56, 189, 248, 0.4);
+    background: rgba(56, 189, 248, 0.08);
+}
+
+.hero h1 {
+    font-size: clamp(42px, 5vw, 64px);
+    font-weight: 800;
+    line-height: 1.1;
+    margin-bottom: 16px;
+}
+
+.hero h1 span {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #94a3b8;
+    line-height: 1.6;
+    margin-bottom: 36px;
+}
+
+.hero-actions {
+    display: flex;
+    gap: 18px;
+    margin-bottom: 36px;
+}
+
+.btn {
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.btn.primary {
+    background: linear-gradient(90deg, #38bdf8, #a78bfa);
+    color: #05070f;
+    box-shadow: 0 0 25px rgba(56, 189, 248, 0.4);
+}
+
+.btn.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 40px rgba(56, 189, 248, 0.7);
+}
+
+.btn.secondary {
+    border: 1px solid rgba(56, 189, 248, 0.6);
+    color: #38bdf8;
+}
+
+.btn.secondary:hover {
+    background: rgba(56, 189, 248, 0.1);
+    transform: translateY(-3px);
+}
+
+.hero-points {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    gap: 12px;
+}
+
+.hero-points li {
+    color: #e5e7eb;
+    font-size: 16px;
+}

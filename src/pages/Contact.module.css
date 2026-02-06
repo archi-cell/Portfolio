@@ -1,0 +1,14 @@
+.form {
+    max-width: 500px;
+    margin: auto;
+}
+
+.input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    border: none;
+    background: #0b1020;
+    color: #e5e7eb;
+}
